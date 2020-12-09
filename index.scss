@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "Roboto";
+  font-family: "roboto";
   src: url("fonts/Roboto-Regular.ttf");
 }
+  @font-face {
+    font-family: "shrikhand";
+    src: url("fonts/Shrikhand-Regular.otf");
+  }
 
 body {
-  margin: 2px;
-}
-
-header,
-nav {
   font-family: "roboto";
+  margin: 2px;
 }
 
 .header_logo {
@@ -83,12 +83,14 @@ header p {
   font-size: 20px;
   font-weight: bold;
   margin-left: 20px;
+ 
 }
 
 .menu_ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  
 }
 
 .menu_li {
@@ -130,7 +132,7 @@ header p {
     display: flex;
     flex-direction: row;
     text-align: center;
-    margin-left: 400px;
+    justify-content: center;
   }
 }
 
@@ -142,6 +144,8 @@ header p {
   font-size: 20px;
   margin-left: 10%;
 }
+
+/* le resto est pas dans l'article qui le rend gris */
 
 .restaurants {
   display: flex;
@@ -158,13 +162,13 @@ header p {
     background-color: white;
   }
 
+
   .resto img {
     min-width: 100%;
     object-fit: cover;
     max-height: 200px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 0 0 ;
   }
-
   
   .underresto {
     display: flex;
@@ -189,19 +193,25 @@ header p {
 }
 
 @media screen and (min-width: 1025px) {
-  .restaurants :not(.titre_restaurants) {
-    display: flex;
+ 
+  .restaurants {
     flex-direction: row;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+
+  /*  flex-flow: row wrap; */
+
 
   .resto {
-    width: 40%;
+  margin-right: 40px;
+
   }
 
-  .imgresto {
-    max-width: 200px;
+  .resto i {
+    margin-right: 60px;
   }
+
 }
 
 /* footer */
@@ -209,9 +219,9 @@ header p {
 footer {
   margin-top: 25px;
   padding-top: 25px;
-  background-color: grey;
+  background-color: black;
   padding-bottom: 25px;
-  font-family: "Roboto";
+  
   padding-left: 30px;
 }
 
@@ -222,8 +232,11 @@ footer {
 /* color reservia ain't working */
 
 footer p {
-  color: white
+  color: white;
+  font-family: "shrikhand";
+  font-size: 40px;
 }
+
 
 footer a {
   text-decoration: none;
@@ -248,6 +261,7 @@ footer a {
 .footer_li {
   margin: 10px;
 }
+
 
 @media screen and (min-width: 1025px) {
 

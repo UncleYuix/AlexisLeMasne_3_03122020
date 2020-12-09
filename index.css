@@ -1,15 +1,16 @@
 @font-face {
-  font-family: "Roboto";
+  font-family: "roboto";
   src: url("fonts/Roboto-Regular.ttf");
 }
 
-body {
-  margin: 2px;
+@font-face {
+  font-family: "shrikhand";
+  src: url("fonts/Shrikhand-Regular.otf");
 }
 
-header,
-nav {
+body {
   font-family: "roboto";
+  margin: 2px;
 }
 
 .header_logo {
@@ -163,7 +164,9 @@ header p {
         -ms-flex-direction: row;
             flex-direction: row;
     text-align: center;
-    margin-left: 400px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -174,6 +177,7 @@ header p {
   margin-left: 10%;
 }
 
+/* le resto est pas dans l'article qui le rend gris */
 .restaurants {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,7 +207,7 @@ header p {
   -o-object-fit: cover;
      object-fit: cover;
   max-height: 200px;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 0 0;
 }
 
 .restaurants .underresto {
@@ -233,22 +237,23 @@ header p {
 }
 
 @media screen and (min-width: 1025px) {
-  .restaurants :not(.titre_restaurants) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .restaurants {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
+  /*  flex-flow: row wrap; */
   .resto {
-    width: 40%;
+    margin-right: 40px;
   }
-  .imgresto {
-    max-width: 200px;
+  .resto i {
+    margin-right: 60px;
   }
 }
 
@@ -256,9 +261,8 @@ header p {
 footer {
   margin-top: 25px;
   padding-top: 25px;
-  background-color: grey;
+  background-color: black;
   padding-bottom: 25px;
-  font-family: "Roboto";
   padding-left: 30px;
 }
 
@@ -269,6 +273,8 @@ footer {
 /* color reservia ain't working */
 footer p {
   color: white;
+  font-family: "shrikhand";
+  font-size: 40px;
 }
 
 footer a {
