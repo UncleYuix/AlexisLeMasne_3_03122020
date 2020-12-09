@@ -14,7 +14,11 @@ nav {
 
 .header_logo {
   width: auto;
-  margin-left: 150px;
+  max-width: 200px;
+}
+
+header p {
+  text-align: center;
 }
 
 .localisation {
@@ -183,10 +187,6 @@ nav {
   padding-right: 10px;
 }
 
-.restaurants .titre_restaurants {
-  font-size: 20px;
-}
-
 .restaurants .resto {
   -webkit-box-shadow: 2px 2px 2px 2px #7e7979;
           box-shadow: 2px 2px 2px 2px #7e7979;
@@ -232,11 +232,75 @@ nav {
   color: grey;
 }
 
+@media screen and (min-width: 1025px) {
+  .restaurants :not(.titre_restaurants) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+  }
+  .resto {
+    width: 40%;
+  }
+  .imgresto {
+    max-width: 200px;
+  }
+}
+
+/* footer */
 footer {
-  margin-top: 50px;
+  margin-top: 25px;
+  padding-top: 25px;
+  background-color: grey;
+  padding-bottom: 25px;
+  font-family: "Roboto";
+  padding-left: 30px;
+}
+
+.footer_logo img {
+  color: white;
+}
+
+/* color reservia ain't working */
+footer p {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
 .footer_ul {
   list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.i1_li {
+  padding-right: 6px;
+}
+
+.footer_li i {
+  margin-left: -30px;
+  padding-right: 6px;
+  color: white;
+}
+
+.footer_li {
+  margin: 10px;
+}
+
+@media screen and (min-width: 1025px) {
+  footer p {
+    text-align: center;
+  }
+  .footer_ul {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=index.css.map */

@@ -14,7 +14,11 @@ nav {
 
 .header_logo {
   width: auto;
-  margin-left: 150px;
+  max-width: 200px;
+}
+
+header p {
+  text-align: center;
 }
 
 .localisation {
@@ -76,10 +80,10 @@ nav {
 /* nav */
 
 .fonctionnement {
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 20px;
-  }
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
 
 .menu_ul {
   display: flex;
@@ -116,22 +120,21 @@ nav {
   color: grey;
 }
 
+
 .menu_li:hover {
-    background: #c8abee;
+  background: #c8abee;
 }
 
 @media screen and (min-width: 1025px) {
-    .menu_ul {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        margin-left: 400px;
-    }
-} 
+  .menu_ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 400px;
+  }
+}
 
 /* le text align est pas fonctionnel du coup j'ai mis un vieux margin */
-
-
 
 /* fin nav */
 
@@ -147,52 +150,112 @@ nav {
   padding-left: 10px;
   padding-right: 10px;
 
-  .titre_restaurants {
-    font-size: 20px;
-  }
   .resto {
     box-shadow: 2px 2px 2px 2px #7e7979;
     margin-bottom: 30px;
     border-radius: 20px 20px 20px 20px;
     align-items: center;
-    background-color: white
+    background-color: white;
   }
 
   .resto img {
-    
     min-width: 100%;
     object-fit: cover;
     max-height: 200px;
     border-radius: 20px 20px 20px 20px;
   }
 
+  
   .underresto {
-      display: flex;
-      flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 
   .nameRestaurant {
-      font-weight: bold;
-      padding-left: 25px
+    font-weight: bold;
+    padding-left: 25px;
   }
-  
+
   .placeRestaurant {
-      font-weight: normal;
+    font-weight: normal;
   }
 
   .hearth {
-      padding-top: 20px;
-      padding-left: 200px;
-      font-size: 1.5em;
-      color: grey
+    padding-top: 20px;
+    padding-left: 200px;
+    font-size: 1.5em;
+    color: grey;
   }
 }
 
+@media screen and (min-width: 1025px) {
+  .restaurants :not(.titre_restaurants) {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+  }
+
+  .resto {
+    width: 40%;
+  }
+
+  .imgresto {
+    max-width: 200px;
+  }
+}
+
+/* footer */
+
 footer {
-    margin-top: 50px;
+  margin-top: 25px;
+  padding-top: 25px;
+  background-color: grey;
+  padding-bottom: 25px;
+  font-family: "Roboto";
+  padding-left: 30px;
+}
+
+.footer_logo img {
+  color: white;
+}
+
+/* color reservia ain't working */
+
+footer p {
+  color: white
+}
+
+footer a {
+  text-decoration: none;
+  color:white;
 }
 
 .footer_ul {
-    list-style-type: none;
+  list-style-type: none;
+  margin-bottom: 20px;
 }
 
+.i1_li {
+  padding-right: 6px;
+}
+
+.footer_li i {
+  margin-left: -30px;
+  padding-right: 6px;
+  color: white;
+}
+
+.footer_li {
+  margin: 10px;
+}
+
+@media screen and (min-width: 1025px) {
+
+  footer p {
+    text-align: center;
+  }
+
+  .footer_ul {
+    text-align: center;
+  }
+}
