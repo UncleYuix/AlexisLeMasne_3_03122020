@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf");
+}
+
+body {
+  margin: 2px;
+}
+
+header,
+nav {
+  font-family: "roboto";
+}
+
+.header_logo {
+  width: auto;
+  margin-left: 150px;
+}
+
+.localisation {
+  background-color: #e6e9ee;
+  box-shadow: inset 5px 15px 5px -10px #c0c0c0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.exploration {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.reservation {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.discovery {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+.exploration .myButton {
+  box-shadow: inset 0px 1px 0px 0px #efdcfb;
+  background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
+  background-color: #ff79d9;
+  border-radius: 29px;
+  border: 1px solid #99e2d0;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 18px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #9752cc;
+}
+.exploration .myButton:hover {
+  background: linear-gradient(to bottom, #9256dc 5%, #ff79d9 100%);
+  background-color: #9256dc;
+}
+.exploration .myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+/* nav */
+
+.fonctionnement {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+.menu_ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.menu_li {
+  padding: 30px;
+  margin: 15px;
+  margin-right: 50px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 2px 2px 2px 2px #ebe8e8;
+  background-color: #efefef;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu_numero {
+  margin-left: -45px;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px 5px 10px;
+  font-size: 12px;
+}
+
+.menu_icon {
+  padding-top: 2px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: grey;
+}
+
+.menu_li:hover {
+    background: #c8abee;
+}
+
+@media screen and (min-width: 1025px) {
+    .menu_ul {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin-left: 400px;
+    }
+} 
+
+/* le text align est pas fonctionnel du coup j'ai mis un vieux margin */
+
+
+
+/* fin nav */
+
+.titre_restaurants {
+  font-size: 20px;
+  margin-left: 10%;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(233, 235, 236);
+  padding-left: 10px;
+  padding-right: 10px;
+
+  .titre_restaurants {
+    font-size: 20px;
+  }
+  .resto {
+    box-shadow: 2px 2px 2px 2px #7e7979;
+    margin-bottom: 30px;
+    border-radius: 20px 20px 20px 20px;
+    align-items: center;
+    background-color: white
+  }
+
+  .resto img {
+    
+    min-width: 100%;
+    object-fit: cover;
+    max-height: 200px;
+    border-radius: 20px 20px 20px 20px;
+  }
+
+  .underresto {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .nameRestaurant {
+      font-weight: bold;
+      padding-left: 25px
+  }
+  
+  .placeRestaurant {
+      font-weight: normal;
+  }
+
+  .hearth {
+      padding-top: 20px;
+      padding-left: 200px;
+      font-size: 1.5em;
+      color: grey
+  }
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.footer_ul {
+    list-style-type: none;
+}
+
