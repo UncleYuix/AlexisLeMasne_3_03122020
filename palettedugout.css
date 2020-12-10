@@ -1,1 +1,105 @@
-/* No CSS *//*# sourceMappingURL=palettedugout.css.map */
+@font-face {
+  font-family: "roboto";
+  src: url("fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "shrikhand";
+  src: url("fonts/Shrikhand-Regular.otf");
+}
+
+body {
+  font-family: "roboto";
+  margin: 2px;
+}
+
+.header_logo {
+  width: auto;
+  max-width: 200px;
+  padding-left: 50px;
+}
+
+header p {
+  text-align: center;
+  font-family: "shrikhand";
+  font-size: 40px;
+}
+
+header a {
+  text-decoration: none;
+  margin-top: -20px;
+}
+
+header img {
+  min-width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* fin footer */
+article {
+  background-color: #c4c4c4;
+}
+
+article .titlepage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (min-width: 1025px) {
+  article {
+    text-align: center;
+  }
+  /* footer */
+  footer {
+    margin-top: 25px;
+    padding-top: 25px;
+    background-color: black;
+    padding-bottom: 25px;
+    padding-left: 30px;
+  }
+  .footer_logo img {
+    color: white;
+  }
+  /* color reservia ain't working */
+  footer p {
+    color: white;
+    font-family: "shrikhand";
+    font-size: 40px;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  .footer_ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+  }
+  .i1_li {
+    padding-right: 6px;
+  }
+  .footer_li i {
+    margin-left: -30px;
+    padding-right: 6px;
+    color: white;
+  }
+  .footer_li {
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (min-width: 1025px) {
+  footer p {
+    text-align: center;
+  }
+  .footer_ul {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=palettedugout.css.map */
