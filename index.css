@@ -251,9 +251,15 @@ header p {
   /*  flex-flow: row wrap; */
   .resto {
     margin-right: 40px;
+    height: 310px;
+    width: 20%;
   }
   .resto i {
     margin-right: 60px;
+  }
+  .nameRestaurant {
+    width: 200px;
+    position: absolute;
   }
 }
 
