@@ -2,174 +2,182 @@
   font-family: "roboto";
   src: url("fonts/Roboto-Regular.ttf");
 }
-  @font-face {
-    font-family: "shrikhand";
-    src: url("fonts/Shrikhand-Regular.otf");
-  }
+@font-face {
+  font-family: "shrikhand";
+  src: url("fonts/Shrikhand-Regular.otf");
+}
 
 body {
   font-family: "roboto";
-  margin: 2px;
+  margin: 0.2rem;
 }
 
-.header_logo {
-  width: auto;
-  max-width: 200px;
-}
-
-header p {
-  text-align: center;
-}
-
-.localisation {
-  background-color: #e6e9ee;
-  box-shadow: inset 5px 15px 5px -10px #c0c0c0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-weight: bold;
-}
-
-.exploration {
-  background-color: #f5f5f5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 50px;
-}
-
-.reservation {
-  font-size: 30px;
-  font-weight: bolder;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.discovery {
-  font-size: 17px;
-  font-weight: bold;
-  text-align: center;
-  opacity: 0.7;
-  margin-top: 5px;
-}
-
-.exploration .myButton {
-  box-shadow: inset 0px 1px 0px 0px #efdcfb;
-  background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
-  background-color: #ff79d9;
-  border-radius: 29px;
-  border: 1px solid #99e2d0;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 15px;
-  padding: 18px 24px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #9752cc;
-}
-.exploration .myButton:hover {
-  background: linear-gradient(to bottom, #9256dc 5%, #ff79d9 100%);
-  background-color: #9256dc;
-}
-.exploration .myButton:active {
-  position: relative;
-  top: 1px;
-}
-
-/* nav */
-
-.fonctionnement {
-  font-size: 20px;
-  font-weight: bold;
-  margin-left: 20px;
- 
-}
-
-.menu_ul {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  
-}
-
-.menu_li {
-  padding: 30px;
-  margin: 15px;
-  margin-right: 50px;
-  font-weight: bold;
-  font-size: 15px;
-  border-radius: 25px 25px 25px 25px;
-  box-shadow: 2px 2px 2px 2px #ebe8e8;
-  background-color: #efefef;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.menu_numero {
-  margin-left: -45px;
-  background-color: #9356dc;
-  color: white;
-  border-radius: 50%;
-  padding: 5px 10px 5px 10px;
-  font-size: 12px;
-}
-
-.menu_icon {
-  padding-top: 2px;
-  padding-left: 30px;
-  padding-right: 30px;
-  color: grey;
-}
-
-
-.menu_li:hover {
-  background: #c8abee;
-}
-
-@media screen and (min-width: 1025px) {
-  .menu_ul {
-    display: flex;
-    flex-direction: row;
+header {
+  .header_logo {
+    width: auto;
+    font-family: "shrikhand";
     text-align: center;
-    justify-content: center;
+    font-size: 3rem;
   }
 }
 
-/* le text align est pas fonctionnel du coup j'ai mis un vieux margin */
+nav {
+  .localisation {
+    background-color: #e6e9ee;
+    box-shadow: inset 5px 15px 5px -10px #c0c0c0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+  }
 
-/* fin nav */
+  .exploration {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
 
-.titre_restaurants {
-  font-size: 20px;
-  margin-left: 10%;
+  .reservation {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 0.3rem;
+  }
+
+  .discovery {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.7;
+    margin-top: 0.3rem;
+  }
+
+  .exploration .myButton {
+    box-shadow: inset 0px 1px 0px 0px #efdcfb;
+    background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
+    background-color: #ff79d9;
+    border-radius: 29px;
+    border: 1px solid #99e2d0;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 1rem;
+    padding: 18px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #9752cc;
+  }
+  .exploration .myButton:hover {
+    background: linear-gradient(to bottom, #9256dc 5%, #ff79d9 100%);
+    background-color: #9256dc;
+  }
+  .exploration .myButton:active {
+    position: relative;
+    top: 1px;
+  }
+
+  /* nav */
+
+  .fonctionnement {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 3rem;
+  }
+
+  .menu_ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+
+  .menu_li {
+    padding: 2rem;
+    margin: 1rem;
+    margin-right: 3rem;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 2px 2px 2px 2px #ebe8e8;
+    background-color: #efefef;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menu_numero {
+    margin-left: -45px;
+    background-color: #9356dc;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+  }
+
+  .menu_icon {
+    padding-top: 2px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: grey;
+  }
+
+  .menu_li:hover {
+    background: #c8abee;
+  }
+
+  @media screen and (min-width: 1025px) {
+    .menu_ul {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      justify-content: center;
+    }
+  }
 }
+
 
 /* le resto est pas dans l'article qui le rend gris */
 
-.restaurants {
+.titre_restaurants {
+  font-size: 1.2rem;
+  margin-left: 10%;
+}
+
+.restaurants:not(.titre_restaurants) {
   display: flex;
   flex-direction: column;
   background-color: rgb(233, 235, 236);
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 
   .resto {
     box-shadow: 2px 2px 2px 2px #7e7979;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
     border-radius: 20px 20px 20px 20px;
     align-items: center;
     background-color: white;
   }
 
-
   .resto img {
     min-width: 100%;
     object-fit: cover;
     max-height: 200px;
-    border-radius: 20px 20px 0 0 ;
+    border-radius: 20px 20px 0 0;
   }
-  
+
+ 
+  .nouveau {
+    border-radius: 10%;
+    padding: 5px 10px;
+    right: 5%;
+    margin-top: 15px;
+    position: absolute;
+    background-color: #99e2d0;
+    color: #2c9c81;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
   .underresto {
     display: flex;
     flex-direction: row;
@@ -177,81 +185,72 @@ header p {
 
   .nameRestaurant {
     font-weight: bold;
-    padding-left: 25px;
+    padding-left: 2rem;
   }
 
   .placeRestaurant {
     font-weight: normal;
   }
 
-  .hearth {
-    padding-top: 20px;
-    padding-left: 200px;
+  .underresto i {
+ 
     font-size: 1.5em;
     color: grey;
+    position: absolute;
+    right: 5%;
+    margin-top: 15px;
+
   }
 }
 
+
 @media screen and (min-width: 1025px) {
- 
-  .restaurants {
+
+  .restaurants:not(.titre_restaurants) {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
   }
 
-  /*  flex-flow: row wrap; */
 
+  
   .resto {
-  margin-right: 40px;
-  height: 310px;
-  width: 20%;
+    margin-right: 5rem;
+    height: 310px;
+    width: 35%;
   }
 
-  .resto i {
-    margin-right: 60px;
-  }
 
   .nameRestaurant {
     width: 200px;
     position: absolute;
-
-}
+  }
 }
 
 /* footer */
 
 footer {
-  margin-top: 25px;
-  padding-top: 25px;
+  padding-top: 2rem;
   background-color: black;
-  padding-bottom: 25px;
-  
-  padding-left: 30px;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
 }
-
-.footer_logo img {
-  color: white;
-}
-
-/* color reservia ain't working */
 
 footer p {
   color: white;
   font-family: "shrikhand";
-  font-size: 40px;
+  font-size: 3rem;
 }
-
 
 footer a {
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
 .footer_ul {
   list-style-type: none;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .i1_li {
@@ -268,9 +267,7 @@ footer a {
   margin: 10px;
 }
 
-
 @media screen and (min-width: 1025px) {
-
   footer p {
     text-align: center;
   }

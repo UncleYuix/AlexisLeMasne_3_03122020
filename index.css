@@ -10,19 +10,19 @@
 
 body {
   font-family: "roboto";
-  margin: 2px;
+  margin: 0.2rem;
 }
 
-.header_logo {
+header .header_logo {
   width: auto;
-  max-width: 200px;
-}
-
-header p {
+  font-family: "shrikhand";
   text-align: center;
+  font-size: 3rem;
 }
 
-.localisation {
+/* nav */
+
+nav .localisation {
   background-color: #e6e9ee;
   -webkit-box-shadow: inset 5px 15px 5px -10px #c0c0c0;
           box-shadow: inset 5px 15px 5px -10px #c0c0c0;
@@ -39,7 +39,7 @@ header p {
   font-weight: bold;
 }
 
-.exploration {
+nav .exploration {
   background-color: #f5f5f5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,25 +51,25 @@ header p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 3rem;
 }
 
-.reservation {
-  font-size: 30px;
+nav .reservation {
+  font-size: 1.7rem;
   font-weight: bolder;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 0.3rem;
 }
 
-.discovery {
-  font-size: 17px;
+nav .discovery {
+  font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   opacity: 0.7;
-  margin-top: 5px;
+  margin-top: 0.3rem;
 }
 
-.exploration .myButton {
+nav .exploration .myButton {
   -webkit-box-shadow: inset 0px 1px 0px 0px #efdcfb;
           box-shadow: inset 0px 1px 0px 0px #efdcfb;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ff79d9), to(#9256dc));
@@ -81,31 +81,30 @@ header p {
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
-  font-size: 15px;
+  font-size: 1rem;
   padding: 18px 24px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #9752cc;
 }
 
-.exploration .myButton:hover {
+nav .exploration .myButton:hover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #9256dc), to(#ff79d9));
   background: linear-gradient(to bottom, #9256dc 5%, #ff79d9 100%);
   background-color: #9256dc;
 }
 
-.exploration .myButton:active {
+nav .exploration .myButton:active {
   position: relative;
   top: 1px;
 }
 
-/* nav */
-.fonctionnement {
-  font-size: 20px;
+nav .fonctionnement {
+  font-size: 1.2rem;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 3rem;
 }
 
-.menu_ul {
+nav .menu_ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,10 +115,10 @@ header p {
   list-style-type: none;
 }
 
-.menu_li {
-  padding: 30px;
-  margin: 15px;
-  margin-right: 50px;
+nav .menu_li {
+  padding: 2rem;
+  margin: 1rem;
+  margin-right: 3rem;
   font-weight: bold;
   font-size: 15px;
   border-radius: 25px 25px 25px 25px;
@@ -134,7 +133,7 @@ header p {
           justify-content: flex-start;
 }
 
-.menu_numero {
+nav .menu_numero {
   margin-left: -45px;
   background-color: #9356dc;
   color: white;
@@ -143,19 +142,19 @@ header p {
   font-size: 12px;
 }
 
-.menu_icon {
+nav .menu_icon {
   padding-top: 2px;
   padding-left: 30px;
   padding-right: 30px;
   color: grey;
 }
 
-.menu_li:hover {
+nav .menu_li:hover {
   background: #c8abee;
 }
 
 @media screen and (min-width: 1025px) {
-  .menu_ul {
+  nav .menu_ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -170,15 +169,13 @@ header p {
   }
 }
 
-/* le text align est pas fonctionnel du coup j'ai mis un vieux margin */
-/* fin nav */
+/* le resto est pas dans l'article qui le rend gris */
 .titre_restaurants {
-  font-size: 20px;
+  font-size: 1.2rem;
   margin-left: 10%;
 }
 
-/* le resto est pas dans l'article qui le rend gris */
-.restaurants {
+.restaurants:not(.titre_restaurants) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,14 +184,14 @@ header p {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #e9ebec;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-.restaurants .resto {
+.restaurants:not(.titre_restaurants) .resto {
   -webkit-box-shadow: 2px 2px 2px 2px #7e7979;
           box-shadow: 2px 2px 2px 2px #7e7979;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   border-radius: 20px 20px 20px 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -202,7 +199,7 @@ header p {
   background-color: white;
 }
 
-.restaurants .resto img {
+.restaurants:not(.titre_restaurants) .resto img {
   min-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -210,7 +207,19 @@ header p {
   border-radius: 20px 20px 0 0;
 }
 
-.restaurants .underresto {
+.restaurants:not(.titre_restaurants) .nouveau {
+  border-radius: 10%;
+  padding: 5px 10px;
+  right: 5%;
+  margin-top: 15px;
+  position: absolute;
+  background-color: #99e2d0;
+  color: #2c9c81;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.restaurants:not(.titre_restaurants) .underresto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,24 +229,28 @@ header p {
           flex-direction: row;
 }
 
-.restaurants .nameRestaurant {
+.restaurants:not(.titre_restaurants) .nameRestaurant {
   font-weight: bold;
-  padding-left: 25px;
+  padding-left: 2rem;
 }
 
-.restaurants .placeRestaurant {
+.restaurants:not(.titre_restaurants) .placeRestaurant {
   font-weight: normal;
 }
 
-.restaurants .hearth {
-  padding-top: 20px;
-  padding-left: 200px;
+.restaurants:not(.titre_restaurants) .underresto i {
   font-size: 1.5em;
   color: grey;
+  position: absolute;
+  right: 5%;
+  margin-top: 15px;
 }
 
 @media screen and (min-width: 1025px) {
-  .restaurants {
+  .restaurants:not(.titre_restaurants) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -248,14 +261,10 @@ header p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /*  flex-flow: row wrap; */
   .resto {
-    margin-right: 40px;
+    margin-right: 5rem;
     height: 310px;
-    width: 20%;
-  }
-  .resto i {
-    margin-right: 60px;
+    width: 35%;
   }
   .nameRestaurant {
     width: 200px;
@@ -265,22 +274,16 @@ header p {
 
 /* footer */
 footer {
-  margin-top: 25px;
-  padding-top: 25px;
+  padding-top: 2rem;
   background-color: black;
-  padding-bottom: 25px;
-  padding-left: 30px;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
 }
 
-.footer_logo img {
-  color: white;
-}
-
-/* color reservia ain't working */
 footer p {
   color: white;
   font-family: "shrikhand";
-  font-size: 40px;
+  font-size: 3rem;
 }
 
 footer a {
@@ -290,7 +293,7 @@ footer a {
 
 .footer_ul {
   list-style-type: none;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .i1_li {
