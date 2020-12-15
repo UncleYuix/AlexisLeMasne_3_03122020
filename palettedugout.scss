@@ -12,111 +12,181 @@ body {
   margin: 2px;
 }
 
-.header_logo {
-  width: auto;
-  max-width: 200px;
-  padding-left: 50px;
-}
-
 header p {
   text-align: center;
   font-family: "shrikhand";
-  font-size: 40px;
+  font-size: 3rem;
 }
 
-header a {
-    text-decoration: none;
-    margin-top: -20px;
+header i {
+  font-size: 3rem;
+  position: absolute;
+  margin-left: 3rem;
 }
 
 header img {
-    min-width: 100%;
-    height: 300px;
-    object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
-
 
 /* fin footer */
 
 article {
-    background-color: rgb(196, 196, 196) ;
- 
-    .titlepage {
-        display: flex;
-        flex-direction: row;
+  background-color: #e6e9ee;;
+  border-radius: 25px 25px;
+  font-family: "roboto";
+
+  /* il manque le fait qu'elle dépasse sur la photo */
+
+  .titlepage {
+    display: flex;
+    flex-direction: row;
+  }
+  .titlerestaurant {
+    font-family: "shrikhand";
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+
+  .titlepage i {
+    position: absolute;
+    right: 0;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .hearthtitle i:hover {
+          color: pink;
     }
-}
+  }
+
+  .menu_group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titlewhitchplate {
+    border-bottom: solid #99e2d0;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    width: 2.5rem;
+  }
+
+  .desc_title {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 25px 25px 25px 25px;
+    background-color: white;
+    height: 80px;
+
+  }
+
+  .titleplate {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desc_title h3 {
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+
+  .desc_title h4 {
+    font-size: 0.8rem;
+    margin-left: 1rem;
+
+  }
+
+  .price {
+    position: absolute;
+    right: 0;
+    margin-right: 4rem;
+  }
+
+  .commandez {
+    box-shadow: inset 0px 1px 0px 0px #efdcfb;
+    background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
+    background-color: #ff79d9;
+    border-radius: 29px;
+    border: 1px solid #99e2d0;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 18px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #9752cc;
+    width: 100px;
+    text-align: center;
+    
+  }
+
 
 
 
 @media screen and (min-width: 1025px) {
-
-article {
+  article {
     text-align: center;
-}
+    display: flex;
+    flex-direction: row;
+  }
 
-
-
-
+  .desc_title {
+    width: 300px;
+  }
+  }
 
 
 /* footer */
 
 footer {
-    margin-top: 25px;
-    padding-top: 25px;
-    background-color: black;
-    padding-bottom: 25px;
-    
-    padding-left: 30px;
-  }
-  
-  .footer_logo img {
-    color: white;
-  }
-  
-  /* color reservia ain't working */
-  
+  padding-top: 2rem;
+  background-color: black;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+}
+
+footer p {
+  color: white;
+  font-family: "shrikhand";
+  font-size: 3rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer_ul {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+.i1_li {
+  padding-right: 6px;
+}
+
+.footer_li i {
+  margin-left: -30px;
+  padding-right: 6px;
+  color: white;
+}
+
+.footer_li {
+  margin: 10px;
+}
+
+@media screen and (min-width: 1025px) {
   footer p {
-    color: white;
-    font-family: "shrikhand";
-    font-size: 40px;
+    text-align: center;
   }
-  
-  
-  footer a {
-    text-decoration: none;
-    color:white;
-  }
-  
+
   .footer_ul {
-    list-style-type: none;
-    margin-bottom: 20px;
-  }
-  
-  .i1_li {
-    padding-right: 6px;
-  }
-  
-  .footer_li i {
-    margin-left: -30px;
-    padding-right: 6px;
-    color: white;
-  }
-  
-  .footer_li {
-    margin: 10px;
-  }
-  
-  
-  @media screen and (min-width: 1025px) {
-  
-    footer p {
-      text-align: center;
-    }
-  
-    .footer_ul {
-      text-align: center;
-    }
+    text-align: center;
   }
 }
