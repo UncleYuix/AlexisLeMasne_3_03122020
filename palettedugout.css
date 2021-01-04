@@ -36,6 +36,10 @@ header img {
 }
 
 /* fin footer */
+article > .commandez {
+  text-align: center;
+}
+
 article {
   background-color: #f6f6f6;
   border-radius: 25px 25px;
@@ -136,8 +140,6 @@ article .price {
 }
 
 article .commandez {
-  -webkit-box-shadow: inset 0px 1px 0px 0px #efdcfb;
-          box-shadow: inset 0px 1px 0px 0px #efdcfb;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ff79d9), to(#9256dc));
   background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
   background-color: #ff79d9;
@@ -149,34 +151,8 @@ article .commandez {
   padding: 18px 24px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #9752cc;
-  width: 100px;
   margin-bottom: 60px;
   margin-top: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-article a {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (min-width: 1025px) {
-  article {
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .desc_title {
-    width: 300px;
-  }
 }
 
 /* footer */
@@ -217,11 +193,11 @@ footer .footer_li {
 }
 
 @media screen and (min-width: 1025px) {
-  footer p {
+  footer {
     text-align: center;
   }
-  .footer_ul {
-    text-align: center;
+  footer p {
+    margin-left: 2rem;
   }
 }
 /*# sourceMappingURL=palettedugout.css.map */
