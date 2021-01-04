@@ -59,7 +59,6 @@ nav {
     background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
     background-color: #ff79d9;
     border-radius: 29px;
-    border: 1px solid #99e2d0;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
@@ -69,10 +68,7 @@ nav {
     text-decoration: none;
     text-shadow: 0px 1px 0px #9752cc;
   }
-  .exploration .myButton:hover {
-    background: linear-gradient(to bottom, #9256dc 5%, #ff79d9 100%);
-    background-color: #9256dc;
-  }
+
   .exploration .myButton:active {
     position: relative;
     top: 1px;
@@ -97,7 +93,7 @@ nav {
     margin: 1rem;
     margin-right: 3rem;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 0.9rem;
     border-radius: 25px 25px 25px 25px;
     box-shadow: 2px 2px 2px 2px #ebe8e8;
     background-color: #efefef;
@@ -124,19 +120,13 @@ nav {
   .menu_li:hover {
     background: #c8abee;
   }
-
-  @media screen and (min-width: 1025px) {
-    .menu_ul {
-      display: flex;
-      flex-direction: row;
-      text-align: center;
-      justify-content: center;
-    }
-  }
 }
 
 
 /* le resto est pas dans l'article qui le rend gris */
+
+
+
 
 .titre_restaurants {
   font-size: 1.2rem;
@@ -197,53 +187,34 @@ nav {
     font-size: 1.5em;
     color: grey;
     position: absolute;
-    right: 5%;
+    right: 15%;
     margin-top: 15px;
 
   }
 }
 
 
-@media screen and (min-width: 1025px) {
-
-  .restaurants:not(.titre_restaurants) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 
 
-  
-  .resto {
-    margin-right: 5rem;
-    height: 310px;
-    width: 35%;
-  }
-
-
-  .nameRestaurant {
-    width: 200px;
-    position: absolute;
-  }
-}
 
 /* footer */
 
 footer {
   padding-top: 2rem;
-  background-color: black;
+  background-color: rgb(63, 62, 62);
   padding-bottom: 2rem;
-  padding-left: 3rem;
-}
+  
+ 
 
-footer p {
+
+ p {
   color: white;
   font-family: "shrikhand";
-  font-size: 1rem;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
 }
 
-footer a {
+ a {
   text-decoration: none;
   color: white;
 }
@@ -258,13 +229,13 @@ footer a {
 }
 
 .footer_li i {
-  margin-left: -30px;
   padding-right: 6px;
   color: white;
 }
 
 .footer_li {
   margin: 10px;
+}
 }
 
 @media screen and (min-width: 1025px) {
@@ -274,5 +245,10 @@ footer a {
 
   .footer_ul {
     text-align: center;
+  }
+
+  .footer_li i {
+
+  padding-right: 3rem;
   }
 }
