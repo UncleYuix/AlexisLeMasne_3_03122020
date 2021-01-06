@@ -144,14 +144,14 @@ nav {
   }
 
   .menu_li:hover {
-    background: #c8abee;
+    background: #e9dafd;
   }
 }
 
 
 .titre_restaurants {
   font-size: 1.2rem;
-  margin-left: 10%;
+  margin-left: 3rem;
 }
 
 .restaurants:not(.titre_restaurants) {
@@ -203,15 +203,7 @@ nav {
     font-weight: normal;
   }
 
-  .underresto i {
- 
-    font-size: 1.5em;
-    color: grey;
-    position: absolute;
-    right: 15%;
-    margin-top: 15px;
-
-  }
+  
 }
 
 
@@ -239,6 +231,8 @@ nav {
   background-color: rgb(246, 246, 246);
   border-radius: 25px 25px;
   font-family: "roboto";
+  position: relative;
+  bottom: 3rem;
 
   .titlepage {
     display: flex;
@@ -250,18 +244,7 @@ nav {
     margin-left: 1rem;
   }
 
-  .titlepage i {
-    position: absolute;
-    right: 0;
-    margin-right: 1rem;
-    margin-top: 2rem;
-    font-size: 1.2rem;
-  }
-
-  .hearthtitle i:hover {
-          color: pink;
-    }
-
+  
 
 
   .menu_group {
@@ -364,26 +347,38 @@ nav {
 
 /* animation */
 
-.classical .color  {
-  position : absolute
+
+.coeur {
+ 
+  font-size: 1.5em;
+  color: grey;
+  position: absolute;
+  right: 15%;
+  margin-top: 15px;
+
 }
 
-.color{
-  background: red;
-  color: red;
-    background : rgba(255,121,218,07) ;
-    background : linear-gradient ( 360deg,#ff79da 0%, #ff79da 0%, #9356dc 93%);
-    -wekit-background-clip : text;
-  
-    -webkit-text-fill-color: transparent;
-    opacity :0;
-    }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-.color:hover{
-  opacity :1;
-  color: blue;
+i {
+  font-family: "Font Awesome 5 Free";
+  font-weight: normal;
+  font-style: normal;
+}
 
-  }
+.coeur:hover i {
+  font-weight: bold;
+}
+
+.coeur:hover {
+  background: -webkit-linear-gradient(rgb(172, 101, 148), rgb(136, 69, 106));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-duration: 3s;
+}
   
 
 /* footer */
@@ -441,3 +436,5 @@ footer {
   padding-right: 3rem;
   }
 }
+
+
