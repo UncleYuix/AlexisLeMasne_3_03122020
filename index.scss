@@ -362,9 +362,29 @@ nav {
 }
 
 
+/* animation */
 
+.classical .color  {
+  position : absolute
+}
 
+.color{
+  background: red;
+  color: red;
+    background : rgba(255,121,218,07) ;
+    background : linear-gradient ( 360deg,#ff79da 0%, #ff79da 0%, #9356dc 93%);
+    -wekit-background-clip : text;
+  
+    -webkit-text-fill-color: transparent;
+    opacity :0;
+    }
 
+.color:hover{
+  opacity :1;
+  color: blue;
+
+  }
+  
 
 /* footer */
 

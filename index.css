@@ -407,6 +407,26 @@ nav .menu_li:hover {
   }
 }
 
+/* animation */
+.classical .color {
+  position: absolute;
+}
+
+.color {
+  background: red;
+  color: red;
+  background: #ff79da;
+  background: linear-gradient 360deg, #ff79da 0%, #ff79da 0%, #9356dc 93%;
+  -wekit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.color:hover {
+  opacity: 1;
+  color: blue;
+}
+
 /* footer */
 footer {
   padding-top: 2rem;
