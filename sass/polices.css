@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "roboto";
+  src: url("fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "shrikhand";
+  src: url("fonts/Shrikhand-Regular.otf");
+}
+
+body {
+  font-family: "roboto";
+  margin: 0.2rem;
+}
+/*# sourceMappingURL=polices.css.map */

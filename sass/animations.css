@@ -1,0 +1,31 @@
+.coeur {
+  font-size: 1.5em;
+  color: grey;
+  position: absolute;
+  right: 15%;
+  margin-top: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+i {
+  font-family: "Font Awesome 5 Free";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.coeur:hover i {
+  font-weight: bold;
+}
+
+.coeur:hover {
+  background: -webkit-linear-gradient(#ac6594, #88456a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+/*# sourceMappingURL=animations.css.map */

@@ -1,0 +1,127 @@
+
+.menu > .commandez {
+    text-align: center;
+  }
+  
+  .menu {
+    background-color: rgb(246, 246, 246);
+    border-radius: 25px 25px;
+    font-family: "roboto";
+    position: relative;
+    bottom: 3rem;
+  
+    .titlepage {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .titlepage .coeur {
+      padding-top: -50px;  
+  
+    }
+    .titlerestaurant {
+      font-family: "shrikhand";
+      font-size: 1.2rem;
+      margin-left: 1rem;
+    }
+  
+    
+  
+  
+    .menu_group {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .titlewhitchplate {
+      border-bottom: solid $ThirdColor;
+      font-size: 0.8rem;
+      margin-left: 1rem;
+      width: 2.5rem;
+    }
+  
+    .desc_title {
+      display: flex;
+      flex-direction: row;
+      box-shadow: 1px 1px 1px 1px #e4dcdc;
+      margin: 1rem;
+      border-radius: 25px 25px 25px 25px;
+      background-color: white;
+      height: 80px;
+  
+    }
+  
+    .titleplate {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .desc_title h3 {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      margin-bottom: 0;
+      margin-left: 1rem;
+    }
+  
+    .desc_title h4 {
+      font-size: 0.8rem;
+      margin-left: 1rem;
+      opacity: 0.8;
+      margin-top: 0.8rem;
+  
+    }
+  
+    .price {
+      position: absolute;
+      right: 0;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      margin-right: 3rem;
+    }
+  
+    .commandez {
+      background: linear-gradient(to bottom, #ff79d9 5%, $mainColor 100%);
+      border-radius: 29px;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 1rem;
+      padding: 18px 24px;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #9752cc;
+      margin-bottom: 60px;
+      margin-top: 50px; 
+      justify-content: center;
+      align-items: center;
+    }  
+  
+    .commandez:hover {
+      background: linear-gradient(to bottom, #f7ace1 5%, #a97edd 100%);
+    }
+  
+    .command {
+   display: flex;
+   justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 388px) {
+    
+    .menu .titlerestaurant {
+      font-size: 1rem;
+    }
+  
+    .menu .titlepage i   {
+      margin-top: 1.3rem;
+    }
+  
+    .menu .desc_title {
+      margin-left: 0.2rem;
+      margin-right: 0.2rem;
+    }
+  
+    .menu .price {
+      margin-right: 1.2rem;
+    }
+  }
+  

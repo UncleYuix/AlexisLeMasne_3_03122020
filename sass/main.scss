@@ -1,0 +1,177 @@
+
+nav {
+    .localisation {
+      background-color: #e6e9ee;
+      box-shadow: inset 5px 15px 5px -10px #c0c0c0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-weight: bold;
+    }
+  
+    .exploration {
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 3rem;
+    }
+  
+    .reservation {
+      font-size: 1.7rem;
+      font-weight: bolder;
+      text-align: center;
+      margin-bottom: 0.3rem;
+    }
+  
+    .discovery {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      opacity: 0.7;
+      margin-top: 0.3rem;
+    }
+  
+     .myButton {
+      box-shadow: inset 0px 1px 0px 0px #efdcfb;
+      background: linear-gradient(to bottom,$SecondaryColor 5%,$mainColor 100%);
+      border-radius: 29px;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Arial;
+      font-size: 1rem;
+      padding: 18px 24px;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #9752cc;
+    }
+  
+     .myButton:active {
+      position: relative;
+      top: 1px;
+    }
+  
+    .myButton:hover {
+      background: linear-gradient(to bottom, #fca1e2 5%, #9e74d1 100%);
+    }
+    
+  
+    /* nav */
+  
+    .fonctionnement {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-left: 3rem;
+    }
+  
+    .menu_ul {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+  
+    }
+  
+    .menu_li {
+      padding: 2rem;
+      margin: 1rem;
+      margin-right: 3rem;
+      font-weight: bold;
+      font-size: 0.9rem;
+      border-radius: 25px 25px 25px 25px;
+      box-shadow: 2px 2px 2px 2px #ebe8e8;
+      background-color: #efefef;
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .menu_numero {
+      margin-left: -45px;
+      background-color: $mainColor;
+      color: white;
+      border-radius: 50%;
+      padding: 5px 10px 5px 10px;
+      font-size: 12px;
+    }
+  
+    .menu_icon {
+      padding-top: 2px;
+      padding-left: 30px;
+      padding-right: 30px;
+      color: grey;
+    }
+  
+    .menu_li:hover {
+      background: #e9dafd;
+    }
+  }
+  
+  
+  .titre_restaurants {
+    font-size: 1.2rem;
+    margin-left: 3rem;
+  }
+  
+  .restaurants:not(.titre_restaurants) {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 235, 236);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  
+    .resto {
+      box-shadow: 2px 2px 2px 2px #7e7979;
+      margin-bottom: 3rem;
+      border-radius: 20px 20px 20px 20px;
+      align-items: center;
+      background-color: white;
+    }
+  
+    .resto img {
+      min-width: 100%;
+      object-fit: cover;
+      max-height: 200px;
+      border-radius: 20px 20px 0 0;
+    }
+  
+   
+    .nouveau {
+      border-radius: 10%;
+      padding: 5px 10px;
+      right: 5%;
+      margin-top: 15px;
+      position: absolute;
+      background-color: $ThirdColor;
+      color: #2c9c81;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  
+    .underresto {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .nameRestaurant {
+      font-weight: bold;
+      padding-left: 2rem;
+    }
+  
+    .placeRestaurant {
+      font-weight: normal;
+    }
+  
+    
+  }
+  
+  
+  
+  /* mq > 380px acceuil */
+  
+  @media screen and (max-width: 388px) {
+    nav .menu_li {
+        margin-left: -20px;
+        margin-right: 20px;
+    }
+  }
+  
+  
