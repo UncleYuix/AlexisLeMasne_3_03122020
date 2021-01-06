@@ -267,6 +267,10 @@ nav .menu_li:hover {
           flex-direction: row;
 }
 
+.menu .titlepage .coeur {
+  padding-top: -50px;
+}
+
 .menu .titlerestaurant {
   font-family: "shrikhand";
   font-size: 1.2rem;
