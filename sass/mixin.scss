@@ -1,0 +1,79 @@
+
+
+
+@media screen and (min-width: 1024px){
+
+    body {
+            margin-left: 10%;
+            margin-right: 10%;
+        
+    }
+
+
+    nav {
+        
+        .menu_ul {
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        }
+
+        .menu_li {
+        margin: 20px;
+        margin-left: 10px;
+        }
+
+        .menu_icon {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+}
+
+    .restaurants:not(.titre_restaurants) .nouveau   {
+        right: 19%;
+    }
+
+
+    .restaurants:not(.titre_restaurants) .underresto {
+        justify-content: center;
+}
+
+    .restaurants:not(.titre_restaurants) .resto {
+        margin: 60px;
+}
+
+    .restaurants:not(.titre_restaurants) .resto img {
+
+        max-height: 300px;
+    }
+
+
+    .coeur {
+        right: 25%;
+    }
+
+    .menu .desc_title {
+
+    width: 500px;
+    }
+
+    .menu .titlerestaurant {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu .menu_group {
+        align-items: center;
+    }
+
+    .menu .price {
+        right: 35%;
+    }
+
+    
+.menu .titlepage .coeur{
+    margin-top: 1.5rem;
+}
+}
+

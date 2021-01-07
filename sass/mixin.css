@@ -1,0 +1,67 @@
+@media screen and (min-width: 1024px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  nav .menu_ul {
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .menu_li {
+    margin: 20px;
+    margin-left: 10px;
+  }
+  nav .menu_icon {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .restaurants:not(.titre_restaurants) .nouveau {
+    right: 19%;
+  }
+  .restaurants:not(.titre_restaurants) .underresto {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .restaurants:not(.titre_restaurants) .resto {
+    margin: 60px;
+  }
+  .restaurants:not(.titre_restaurants) .resto img {
+    max-height: 300px;
+  }
+  .coeur {
+    right: 25%;
+  }
+  .menu .desc_title {
+    width: 500px;
+  }
+  .menu .titlerestaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu .menu_group {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu .price {
+    right: 35%;
+  }
+  .menu .titlepage .coeur {
+    margin-top: 1.5rem;
+  }
+}
+/*# sourceMappingURL=mixin.css.map */

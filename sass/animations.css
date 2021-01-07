@@ -24,6 +24,7 @@ i {
 .coeur:hover {
   background: -webkit-linear-gradient(#ac6594, #88456a);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
