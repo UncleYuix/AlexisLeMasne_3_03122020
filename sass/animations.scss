@@ -1,3 +1,5 @@
+@import "sass/polices.scss";
+
 .coeur {
  
     font-size: 1.5em;
@@ -31,4 +33,38 @@
     animation-duration: 3s;
   }
     
+
+
+
+  @-webkit-keyframes circle {
+    from {-webkit-transform:rotate(0deg);}
+    to {-webkit-transform:rotate(360deg);}
+  }
   
+
+@keyframes circle {
+  100% {
+    transform:rotate(360deg)
+  }
+
+  nav, article { opacity: 0;
+  }
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 6px solid $mainColor;
+  border-left-color: $SecondaryColor;
+  border-bottom-color: $ThirdColor;
+  border-right-color: transparent;
+  border-radius: 100%;
+  -webkit-animation: circle .8s linear infinite;
+  animation: circle 8s linear infinite;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+}
+
+
+
