@@ -512,13 +512,13 @@ i {
           animation-duration: 3s;
 }
 
-@-webkit-keyframes load {
+@-webkit-keyframes loaad {
   100% {
     visibility: visible;
   }
 }
 
-@keyframes load {
+@keyframes loaad {
   100% {
     visibility: visible;
   }
@@ -526,7 +526,7 @@ i {
 
 .container {
   position: fixed;
-  z-index: 500;
+  z-index: 300;
   width: 100%;
   height: 100%;
   background: white;

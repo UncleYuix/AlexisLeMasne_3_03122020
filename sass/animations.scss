@@ -34,7 +34,9 @@
   }
     
 
-  @keyframes load {
+
+
+  @keyframes loaad {
     100% {
       visibility: visible;
     }
@@ -42,17 +44,19 @@
 
 
 
-  
+
 .container
 {
   position: fixed;
-  z-index: 500;
+  z-index: 300;
   width: 100%;
   height: 100%;
   background: white;
   animation: load 2.5s;
 }
   
+
+
 
 @keyframes circle {
   100% {
