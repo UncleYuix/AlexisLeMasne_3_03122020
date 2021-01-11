@@ -34,8 +34,24 @@
   }
     
 
+  @keyframes load {
+    100% {
+      visibility: visible;
+    }
+  }
 
 
+
+  
+.container
+{
+  position: fixed;
+  z-index: 500;
+  width: 100%;
+  height: 100%;
+  background: white;
+  animation: load 2.5s;
+}
   
 
 @keyframes circle {
@@ -62,6 +78,15 @@
   top: 50%;
   animation-delay: 2s;
 }
+
+
+
+
+
+
+
+
+
 
 
 .hovericon {
