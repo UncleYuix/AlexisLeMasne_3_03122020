@@ -465,6 +465,21 @@ body {
   }
 }
 
+@font-face {
+  font-family: "roboto";
+  src: url("fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "shrikhand";
+  src: url("fonts/Shrikhand-Regular.otf");
+}
+
+body {
+  font-family: "roboto";
+  margin: 0.2rem;
+}
+
 .coeur {
   font-size: 1.5em;
   color: grey;
@@ -498,7 +513,13 @@ i {
 }
 
 @-webkit-keyframes circle {
-  -webkit-transform:rotate(360deg);
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  header, nav, article {
+    opacity: 0;
+  }
 }
 
 @keyframes circle {
@@ -506,7 +527,7 @@ i {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-  nav, article {
+  header, nav, article {
     opacity: 0;
   }
 }
@@ -524,6 +545,31 @@ i {
   position: absolute;
   right: 50%;
   top: 50%;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.hovericon {
+  visibility: hidden;
+}
+
+.desc_title:hover .price {
+  color: red;
+  cursor: pointer;
+  padding-right: 30px;
+}
+
+.desc_title:hover .hovericon i {
+  color: #99e2d0;
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: visible;
+  width: 30px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -592,4 +638,3 @@ i {
     margin-top: 1.5rem;
   }
 }
-/*# sourceMappingURL=index.css.map */

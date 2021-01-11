@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,UAAU;EACN,WAAW,EAAE,QAAQ;EACrB,GAAG,EAAE,+BAA+B;;;AAEtC,UAAU;EACR,WAAW,EAAE,WAAW;EACxB,GAAG,EAAE,kCAAkC;;;AAGzC,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,QAAQ;EACrB,MAAM,EAAE,MAAM;CACf",
-    "sources": [
-        "polices.scss"
-    ],
-    "names": [],
-    "file": "polices.css"
-}
