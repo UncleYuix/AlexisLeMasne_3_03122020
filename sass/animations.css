@@ -45,24 +45,25 @@ i {
           animation-duration: 3s;
 }
 
-@-webkit-keyframes loaad {
-  100% {
+@-webkit-keyframes load {
+  0% {
     visibility: visible;
   }
 }
 
-@keyframes loaad {
-  100% {
+@keyframes load {
+  0% {
     visibility: visible;
   }
 }
 
 .container {
   position: fixed;
-  z-index: 300;
+  z-index: 500;
   width: 100%;
   height: 100%;
   background: white;
+  opacity: 0.8;
   -webkit-animation: load 2.5s;
           animation: load 2.5s;
 }
