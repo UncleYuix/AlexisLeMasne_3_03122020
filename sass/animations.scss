@@ -34,7 +34,7 @@
   }
     
 
-
+  
 
   @keyframes load {
     0% {
@@ -49,7 +49,7 @@
 {
   visibility: hidden;
   position: fixed;
-  z-index: 500;
+  z-index: 800;
   width: 100%;
   height: 100%;
   background: white;
@@ -65,29 +65,35 @@
   100% {
     transform:rotate(360deg)
   }
-
-  header, nav, article { opacity: 0;
-  }
 }
 
 .spinner {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border: 6px solid $mainColor;
   border-left-color: $SecondaryColor;
   border-bottom-color: $ThirdColor;
   border-right-color: transparent;
   border-radius: 100%;
-  -webkit-animation: circle .8s linear infinite;
-  animation: circle 8s linear infinite;
-  position: absolute;
-  right: 50%;
+  -webkit-animation: circle .4s linear infinite;
+  animation: circle 4s linear infinite;
+  position: relative;
+  left: 50%;
   top: 50%;
   animation-delay: 100ms;
+  margin-right: 10%;
 }
 
 
+@media screen and (min-width: 1025px) {
 
+  .spinnnner {
+    position: relative;
+    right: 50%;
+    top: 50%;
+  }
+
+}
 
 
 
