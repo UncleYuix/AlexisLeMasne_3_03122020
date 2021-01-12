@@ -109,17 +109,17 @@ i {
   }
 }
 
-.hovericon {
+.hoveriiiiiiiiiiicon {
   visibility: hidden;
 }
 
-.desc_title:hover .price {
+.desc_tiiiiiiiiiitle:hover .priiiiiiiiiiice {
   color: red;
   cursor: pointer;
   padding-right: 30px;
 }
 
-.desc_title:hover .hovericon i {
+.desc_tiiiiiiiiiitle:hover .hoveriiiiiiiiiiiicon i {
   color: #99e2d0;
   position: absolute;
   right: 35%;

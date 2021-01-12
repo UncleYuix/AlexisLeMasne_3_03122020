@@ -27,60 +27,76 @@
       margin-left: 1rem;
     }
   
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
     
-  
-  
-    .menu_group {
-      display: flex;
-      flex-direction: column;
+    p {
+      margin: 0;
     }
   
-    .titlewhitchplate {
-      border-bottom: solid $ThirdColor;
-      font-size: 0.8rem;
-      margin-left: 1rem;
-      width: 2.5rem;
-    }
+  .menu_group {
+    display: flex;
+    flex-direction: column;
+  }
   
-    .desc_title {
-      display: flex;
-      flex-direction: row;
-      box-shadow: 1px 1px 1px 1px #e4dcdc;
-      margin: 1rem;
-      border-radius: 25px 25px 25px 25px;
-      background-color: white;
-      height: 80px;
   
-    }
+  .desc_title {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    background: white;
+    box-shadow: 0 10px 10px rgb(230, 230, 230); 
+    border-radius: 15px;
+    margin: 0 15px 15px 0;
+    margin-bottom: 20px;
+  }
   
-    .titleplate {
-      display: flex;
-      flex-direction: column;
-    }
   
-    .desc_title h3 {
-      margin-top: 1rem;
-      font-size: 1.1rem;
-      margin-bottom: 0;
-      margin-left: 1rem;
-    }
+  .titleplate {
+    white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
   
-    .desc_title h4 {
-      font-size: 0.8rem;
-      margin-left: 1rem;
-      opacity: 0.8;
-      margin-top: 0.8rem;
+
+  .price {
+    font-weight: 800; 
+    margin-left: auto;
+    align-self: flex-end;
+  }
   
-    }
+  .hovericon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    margin: -20px -120px -20px 20px ;
+    background: $ThirdColor ;
+    transition: all 0.5s ease-in-out;
+  }
   
-    .price {
-      position: absolute;
-      right: 0;
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      margin-right: 3rem;
-    }
+  .fa-check-circle {
+    font-size: 30px;
+    color: white;
+    transform: rotate(0);
+    transition: all 0.5s ease-in-out;
+  }
   
+   .desc_title:hover  {
+     .hovericon {
+        margin-right: -20px;
+    } 
+     .fa-check-circle {
+       transform: rotate(1turn);
+     }
+  }
+
+
     .commandez {
       background: linear-gradient(to bottom, $SecondaryColor 5%, $mainColor 100%);
       border-radius: 29px;

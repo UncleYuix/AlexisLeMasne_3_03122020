@@ -1,15 +1,25 @@
 
+  @media screen and (max-width: 388px) {
+    nav .menu_li {
+        margin-left: -20px;
+        margin-right: 20px;
+    }
+
+    .restaurants:not(.titre_restaurants) .resto img {
+        height: 170px;
+    }
+  }
+  
+  
 
 
 @media screen and (min-width: 1024px){
 
-    body:not(.container) {
-            margin-left: 10%;
-            margin-right: 10%;
-        
+    .restaurants:not(.titre_restaurants)
+    {
+        margin-left: 10%;
+        margin-right: 10%;
     }
-
-
     nav {
         
         .menu_ul {

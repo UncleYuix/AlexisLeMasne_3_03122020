@@ -208,11 +208,3 @@ nav .menu_li:hover {
 .restaurants:not(.titre_restaurants) .placeRestaurant {
   font-weight: normal;
 }
-
-/* mq > 380px acceuil */
-@media screen and (max-width: 388px) {
-  nav .menu_li {
-    margin-left: -20px;
-    margin-right: 20px;
-  }
-}
