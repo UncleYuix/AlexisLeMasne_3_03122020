@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "roboto";
   src: url("fonts/Roboto-Regular.ttf");
@@ -13,6 +14,7 @@ body {
   margin: 0.2rem;
 }
 
+/* animation du coeur */
 .coeur {
   font-size: 1.5em;
   color: grey;
@@ -45,12 +47,12 @@ i {
           animation-duration: 3s;
 }
 
+/* animation du spinner */
 @-webkit-keyframes load {
   0% {
     visibility: visible;
   }
 }
-
 @keyframes load {
   0% {
     visibility: visible;
@@ -101,33 +103,38 @@ i {
   margin-right: 10%;
 }
 
-@media screen and (min-width: 1025px) {
-  .spinnnner {
-    position: relative;
-    right: 50%;
-    top: 50%;
-  }
-}
-
-.hoveriiiiiiiiiiicon {
-  visibility: hidden;
-}
-
-.desc_tiiiiiiiiiitle:hover .priiiiiiiiiiice {
-  color: red;
-  cursor: pointer;
-  padding-right: 30px;
-}
-
-.desc_tiiiiiiiiiitle:hover .hoveriiiiiiiiiiiicon i {
-  color: #99e2d0;
-  position: absolute;
-  right: 35%;
-  margin-right: 40px;
-  margin-top: 45px;
+/* animation du menu avec l'icône */
+.hovericon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  visibility: visible;
-  width: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+  margin: -20px -120px -20px 20px;
+  background: #99E2D0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.fa-check-circle {
+  font-size: 30px;
+  color: white;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.desc_title:hover .hovericon {
+  margin-right: -20px;
+}
+
+.desc_title:hover .fa-check-circle {
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
 }
