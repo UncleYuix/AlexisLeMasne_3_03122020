@@ -143,7 +143,7 @@ nav .menu_li:hover {
 
 .titre_restaurants {
   font-size: 1.2rem;
-  margin-left: 3rem;
+  margin-left: 0.2rem;
 }
 
 .restaurants:not(.titre_restaurants) {

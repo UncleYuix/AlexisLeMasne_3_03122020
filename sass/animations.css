@@ -20,7 +20,7 @@ body {
   color: grey;
   position: absolute;
   right: 15%;
-  margin-top: 15px;
+  margin-top: 28px;
 }
 
 a {
@@ -96,11 +96,10 @@ i {
   -webkit-animation: circle .4s linear infinite;
   animation: circle 4s linear infinite;
   position: relative;
-  left: 50%;
+  left: 45%;
   top: 50%;
   -webkit-animation-delay: 100ms;
           animation-delay: 100ms;
-  margin-right: 10%;
 }
 
 /* animation du menu avec l'icône */

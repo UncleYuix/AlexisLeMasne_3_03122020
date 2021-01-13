@@ -8,12 +8,29 @@
     .restaurants:not(.titre_restaurants) .resto img {
         height: 170px;
     }
+
+    .coeur {
+
+    right: 10%;
+    margin-top: 20px;
+
   }
+}
   
   
 
 
 @media screen and (min-width: 1024px){
+
+
+    .spinner {
+    left: 48%;
+    }
+
+
+    .titre_restaurants {
+        margin-left: 3.5rem;
+    }
 
     .restaurants:not(.titre_restaurants)
     {

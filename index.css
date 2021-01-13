@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "roboto";
   src: url("fonts/Roboto-Regular.ttf");
@@ -229,7 +230,7 @@ nav .menu_li:hover {
 
 .titre_restaurants {
   font-size: 1.2rem;
-  margin-left: 3rem;
+  margin-left: 0.2rem;
 }
 
 .restaurants:not(.titre_restaurants) {
@@ -331,23 +332,29 @@ body {
           flex-direction: column;
 }
 
-.menu .titlepage .coeur {
-  padding-top: -50px;
-}
-
 .menu .titlerestaurant {
   font-family: "shrikhand";
   font-size: 1.2rem;
   margin-left: 1rem;
 }
 
+.menu .titlewhitchplate {
+  border-bottom: solid #99E2D0;
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  width: 2.5rem;
+  margin-bottom: 2rem;
+}
+
 .menu h3 {
   margin-top: 0;
   margin-bottom: 5px;
+  font-size: 1rem;
 }
 
 .menu p {
   margin: 0;
+  font-size: 0.8rem;
 }
 
 .menu .menu_group {
@@ -434,7 +441,7 @@ body {
   cursor: pointer;
   color: #ffffff;
   font-size: 1rem;
-  padding: 18px 24px;
+  padding: 15px 40px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #9752cc;
   margin-bottom: 60px;
@@ -492,12 +499,13 @@ body {
   margin: 0.2rem;
 }
 
+/* animation du coeur */
 .coeur {
   font-size: 1.5em;
   color: grey;
   position: absolute;
   right: 15%;
-  margin-top: 15px;
+  margin-top: 28px;
 }
 
 a {
@@ -524,12 +532,12 @@ i {
           animation-duration: 3s;
 }
 
+/* animation du spinner */
 @-webkit-keyframes load {
   0% {
     visibility: visible;
   }
 }
-
 @keyframes load {
   0% {
     visibility: visible;
@@ -573,42 +581,46 @@ i {
   -webkit-animation: circle .4s linear infinite;
   animation: circle 4s linear infinite;
   position: relative;
-  left: 50%;
+  left: 45%;
   top: 50%;
   -webkit-animation-delay: 100ms;
           animation-delay: 100ms;
-  margin-right: 10%;
 }
 
-@media screen and (min-width: 1025px) {
-  .spinnnner {
-    position: relative;
-    right: 50%;
-    top: 50%;
-  }
-}
-
-.hoveriiiiiiiiiiicon {
-  visibility: hidden;
-}
-
-.desc_tiiiiiiiiiitle:hover .priiiiiiiiiiice {
-  color: red;
-  cursor: pointer;
-  padding-right: 30px;
-}
-
-.desc_tiiiiiiiiiitle:hover .hoveriiiiiiiiiiiicon i {
-  color: #99e2d0;
-  position: absolute;
-  right: 35%;
-  margin-right: 40px;
-  margin-top: 45px;
+/* animation du menu avec l'icône */
+.hovericon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  visibility: visible;
-  width: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+  margin: -20px -120px -20px 20px;
+  background: #99E2D0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.fa-check-circle {
+  font-size: 30px;
+  color: white;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.desc_title:hover .hovericon {
+  margin-right: -20px;
+}
+
+.desc_title:hover .fa-check-circle {
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
 }
 
 @media screen and (max-width: 388px) {
@@ -619,9 +631,19 @@ i {
   .restaurants:not(.titre_restaurants) .resto img {
     height: 170px;
   }
+  .coeur {
+    right: 10%;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .spinner {
+    left: 48%;
+  }
+  .titre_restaurants {
+    margin-left: 3.5rem;
+  }
   .restaurants:not(.titre_restaurants) {
     margin-left: 10%;
     margin-right: 10%;
