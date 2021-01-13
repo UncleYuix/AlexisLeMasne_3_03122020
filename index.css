@@ -330,6 +330,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-weight: normal;
 }
 
 .menu .titlerestaurant {
@@ -736,6 +737,19 @@ i {
   .coeur {
     right: 10%;
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .menu .titlerestaurant {
+    font-size: 1rem;
+  }
+  .menu .titlepage i {
+    margin-top: 1.3rem;
+  }
+  .menu .desc_title {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
   }
 }
 

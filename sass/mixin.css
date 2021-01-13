@@ -12,6 +12,19 @@
   }
 }
 
+@media screen and (max-width: 388px) {
+  .menu .titlerestaurant {
+    font-size: 1rem;
+  }
+  .menu .titlepage i {
+    margin-top: 1.3rem;
+  }
+  .menu .desc_title {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .spinner {
     left: 48%;
