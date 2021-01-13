@@ -547,13 +547,13 @@ i {
 .container {
   visibility: hidden;
   position: absolute;
-  z-index: 800;
+  z-index: 900;
   width: 100%;
   height: 100%;
   background: white;
-  opacity: 0.8;
-  -webkit-animation: load 3s;
-          animation: load 3s;
+  opacity: 0.9;
+  -webkit-animation: load 1800ms;
+          animation: load 1800ms;
 }
 
 @-webkit-keyframes circle {
@@ -621,6 +621,108 @@ i {
 .desc_title:hover .fa-check-circle {
   -webkit-transform: rotate(1turn);
           transform: rotate(1turn);
+}
+
+/* menu loading progressif */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu_group:nth-child(2) .desc_title:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+.menu_group:nth-child(2) .desc_title:nth-child(3) {
+  -webkit-animation-delay: fadein 2s;
+          animation-delay: fadein 2s;
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
+}
+
+.menu_group:nth-child(2) .desc_title:nth-child(4) {
+  -webkit-animation-delay: fadein 2s;
+          animation-delay: fadein 2s;
+  -webkit-animation: fadein 4s;
+          animation: fadein 4s;
+}
+
+.menu_group:nth-child(2) .desc_title:nth-child(5) {
+  -webkit-animation-delay: fadein 2s;
+          animation-delay: fadein 2s;
+  -webkit-animation: fadein 4s;
+          animation: fadein 4s;
+}
+
+.menu_group:nth-child(3) .desc_title:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation: fadein 6s;
+          animation: fadein 6s;
+}
+
+.menu_group:nth-child(3) .desc_title:nth-child(3) {
+  -webkit-animation-delay: fadein 2s;
+          animation-delay: fadein 2s;
+  -webkit-animation: fadein 7s;
+          animation: fadein 7s;
+}
+
+.menu_group:nth-child(3) .desc_title:nth-child(4) {
+  -webkit-animation-delay: fadein 2s;
+          animation-delay: fadein 2s;
+  -webkit-animation: fadein 8s;
+          animation: fadein 8s;
+}
+
+.menu_group:nth-child(3) .desc_title:nth-child(5) {
+  -webkit-animation-delay: fadein 2s;
+          animation-delay: fadein 2s;
+  -webkit-animation: fadein 9s;
+          animation: fadein 9s;
+}
+
+.menu_group:nth-child(4) .desc_title:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation: fadein 9s;
+          animation: fadein 9s;
+}
+
+.menu_group:nth-child(4) .desc_title:nth-child(3) {
+  -webkit-animation-delay: fadein 2s;
+          animation-delay: fadein 2s;
+  -webkit-animation: fadein 10s;
+          animation: fadein 10s;
+}
+
+.menu_group:nth-child(4) .desc_title:nth-child(4) {
+  -webkit-animation-delay: fadein 2s;
+          animation-delay: fadein 2s;
+  -webkit-animation: fadein 10.5s;
+          animation: fadein 10.5s;
+}
+
+.menu_group:nth-child(4) .desc_title:nth-child(5) {
+  -webkit-animation-delay: fadein 2s;
+          animation-delay: fadein 2s;
+  -webkit-animation: fadein 11s;
+          animation: fadein 11s;
 }
 
 @media screen and (max-width: 388px) {
