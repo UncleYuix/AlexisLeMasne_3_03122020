@@ -160,8 +160,8 @@ nav .menu_li:hover {
 }
 
 .restaurants:not(.titre_restaurants) .resto {
-  -webkit-box-shadow: 2px 2px 2px 2px #7e7979;
-          box-shadow: 2px 2px 2px 2px #7e7979;
+  -webkit-box-shadow: 0 10px 10px #e6e6e6;
+          box-shadow: 0 10px 10px #e6e6e6;
   margin-bottom: 3rem;
   border-radius: 20px 20px 20px 20px;
   -webkit-box-align: center;

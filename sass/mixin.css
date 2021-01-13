@@ -57,6 +57,9 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+  nav .fonctionnement {
+    margin-left: 13%;
+  }
   .restaurants:not(.titre_restaurants) .nouveau {
     right: 19%;
   }

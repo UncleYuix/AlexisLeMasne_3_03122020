@@ -53,8 +53,8 @@
   visibility: hidden;
   position: absolute;
   z-index: 900;
-  width: 100%;
-  height: 100%;
+  width: 99%;
+  height: 99%;
   background: white;
   opacity: 0.9;
   animation: load 1800ms;
@@ -84,6 +84,7 @@
   left: 45%;
   top: 50%;
   animation-delay: 100ms;
+  margin: -4px;
 }
 
 
