@@ -29,10 +29,7 @@
   }
   
   .coeur:hover {
-    background: -webkit-linear-gradient(rgb(172, 101, 148), rgb(136, 69, 106));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(143, 92, 136);
     animation: fadein 3s;
   }
     

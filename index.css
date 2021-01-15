@@ -509,10 +509,7 @@ i {
 }
 
 .coeur:hover {
-  background: -webkit-linear-gradient(#ac6594, #88456a);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #8f5c88;
   -webkit-animation: fadein 3s;
           animation: fadein 3s;
 }
