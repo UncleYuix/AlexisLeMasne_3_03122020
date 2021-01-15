@@ -467,6 +467,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: -45px;
 }
 
 @font-face {
@@ -720,9 +721,6 @@ i {
     right: 10%;
     margin-top: 20px;
   }
-}
-
-@media screen and (max-width: 388px) {
   .menu .titlerestaurant {
     font-size: 1rem;
   }
