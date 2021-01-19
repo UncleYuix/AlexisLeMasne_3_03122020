@@ -46,6 +46,7 @@ nav {
       padding: 18px 24px;
       text-decoration: none;
       text-shadow: 0px 1px 0px $mainColor;
+      box-shadow: 0 10px 10px #dbbaba;
     }
   
      .myButton:active {
@@ -55,6 +56,7 @@ nav {
   
     .myButton:hover {
       background: linear-gradient(to bottom, #fca1e2 5%, #9e74d1 100%);
+      box-shadow: 0 10px 10px #d8c9c9;
     }
     
 

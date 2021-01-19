@@ -1,0 +1,132 @@
+
+@import "polices.scss";
+
+
+.menu > .commandez {
+    text-align: center;
+  }
+  
+  .menu {
+    background-color: rgb(246, 246, 246);
+    border-radius: 25px 25px;
+    position: relative;
+    bottom: 3rem;
+  
+    .titlepage {
+      display: flex;
+      flex-direction: column;
+      font-weight: normal;
+    }
+  
+ 
+    .titlerestaurant {
+      font-family: "shrikhand";
+      font-size: 1.2rem;
+      margin-left: 1rem;
+    }
+    
+    .titlewhitchplate {
+      border-bottom: solid $ThirdColor;
+      font-size: 0.8rem;
+      margin-left: 1rem;
+      width: 2.5rem;
+      margin-bottom: 2rem;
+
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-size: 1rem;
+    }
+    
+    p {
+      margin: 0;
+      font-size: 0.8rem;
+    }
+  
+  .menu_group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .desc_title {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    background: white;
+    box-shadow: 0 10px 10px rgb(230, 230, 230); 
+    border-radius: 15px;
+    margin: 0 15px 15px 0;
+    margin-bottom: 20px;
+  }
+  
+  
+  .titleplate {
+    white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+  
+
+  .price {
+    font-weight: 800; 
+    margin-left: auto;
+    align-self: flex-end;
+  }
+  
+  .hovericon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    margin: -20px -120px -20px 20px ;
+    background: $ThirdColor ;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .fa-check-circle {
+    font-size: 30px;
+    color: white;
+    transform: rotate(0);
+    transition: all 0.5s ease-in-out;
+  }
+  
+   .desc_title:hover  {
+     .hovericon {
+        margin-right: -20px;
+    } 
+     .fa-check-circle {
+       transform: rotate(1turn);
+     }
+  }
+
+
+    .commandez {
+      background: linear-gradient(to bottom, $SecondaryColor 5%, $mainColor 100%);
+      border-radius: 29px;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 1rem;
+      padding: 15px 40px;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #9752cc;
+      margin-bottom: 60px;
+      margin-top: 50px; 
+      justify-content: center;
+      align-items: center;
+    }  
+  
+    .commandez:hover {
+      background: linear-gradient(to bottom, #f7ace1 5%, #a97edd 100%);
+    }
+  
+    .command {
+   display: flex;
+   justify-content: center;
+   margin-bottom: -45px;
+    }
+  }

@@ -161,6 +161,8 @@ nav .myButton {
   padding: 18px 24px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #9356DC;
+  -webkit-box-shadow: 0 10px 10px #dbbaba;
+          box-shadow: 0 10px 10px #dbbaba;
 }
 
 nav .myButton:active {
@@ -171,6 +173,8 @@ nav .myButton:active {
 nav .myButton:hover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #fca1e2), to(#9e74d1));
   background: linear-gradient(to bottom, #fca1e2 5%, #9e74d1 100%);
+  -webkit-box-shadow: 0 10px 10px #d8c9c9;
+          box-shadow: 0 10px 10px #d8c9c9;
 }
 
 nav .fonctionnement {
@@ -510,7 +514,7 @@ i {
 }
 
 .coeur:hover {
-  color: #8f5c88;
+  color: #c5309b9d;
   -webkit-animation: fadein 3s;
           animation: fadein 3s;
 }
@@ -529,10 +533,12 @@ i {
 
 .container {
   visibility: hidden;
-  position: absolute;
   z-index: 900;
-  width: 99%;
-  height: 99%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: white;
   opacity: 0.9;
   -webkit-animation: load 1800ms;
@@ -605,6 +611,12 @@ i {
 .desc_title:hover .fa-check-circle {
   -webkit-transform: rotate(1turn);
           transform: rotate(1turn);
+}
+
+.titleplate > * {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* menu loading progressif */

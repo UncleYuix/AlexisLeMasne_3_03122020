@@ -29,7 +29,7 @@
   }
   
   .coeur:hover {
-    color: rgb(143, 92, 136);
+    color: #c5309b9d;
     animation: fadein 3s;
   }
     
@@ -48,10 +48,12 @@
 .container
 {
   visibility: hidden;
-  position: absolute;
   z-index: 900;
-  width: 99%;
-  height: 99%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: white;
   opacity: 0.9;
   animation: load 1800ms;
@@ -84,8 +86,6 @@
   margin: -4px;
 }
 
-
-
 /* animation du menu avec l'icône */
 
 
@@ -114,6 +114,12 @@
      transform: rotate(1turn);
    }
 }
+
+.titleplate > * {
+  white-space: nowrap;
+  overflow: hidden;
+  }
+
 
 
 
