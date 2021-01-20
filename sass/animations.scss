@@ -31,6 +31,7 @@
   .coeur:hover {
     background: -webkit-linear-gradient(#9356dc, #c24ba4);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: fadein 3s;
   }
@@ -120,6 +121,7 @@
 .titleplate > * {
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
   }
 
 

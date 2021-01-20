@@ -161,8 +161,6 @@ nav .myButton {
   padding: 18px 24px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #9356DC;
-  -webkit-box-shadow: 0 10px 10px #dbbaba;
-          box-shadow: 0 10px 10px #dbbaba;
 }
 
 nav .myButton:active {
@@ -516,6 +514,7 @@ i {
 .coeur:hover {
   background: -webkit-linear-gradient(#9356dc, #c24ba4);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: fadein 3s;
           animation: fadein 3s;
@@ -618,6 +617,7 @@ i {
 .titleplate > * {
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* menu loading progressif */
